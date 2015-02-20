@@ -1,0 +1,23 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Polaris Catalog Search URLs
+# Replace catalog.mylibrary.org with your Polaris catalog address
+
+RewriteRule ^cat/au/(.+)/ti/(.+)$	http://catalog.mylibrary.org/polaris/view.aspx?author=$1&title=$2 [L,R=301]
+RewriteRule ^cat/ti/(.+)/au/(.+)$	http://catalog.mylibrary.org/polaris/view.aspx?author=$2&title=$1 [L,R=301]
+RewriteRule ^cat/cn/(.+)$			http://catalog.mylibrary.org/polaris/view.aspx?cn=$1 [L,R=301]
+RewriteRule ^cat/i/(.+)$ 			http://catalog.mylibrary.org/polaris/view.aspx?cn=$1 [L,R=301]
+RewriteRule ^cat/rs/(.+)$			http://catalog.mylibrary.org/polaris/view.aspx?brs=$1 [L,R=301]
+RewriteRule ^cat/ti/(.+)$			http://catalog.mylibrary.org/polaris/view.aspx?title=$1 [L,R=301]
+RewriteRule ^cat/tip/(.+)$			http://catalog.mylibrary.org/polaris/view.aspx?title=$1&type=phrase [L,R=301]
+RewriteRule ^cat/au/(.+)$			http://catalog.mylibrary.org/polaris/view.aspx?author=$1 [L,R=301]
+RewriteRule ^cat/aup/(.+)$			http://catalog.mylibrary.org/polaris/view.aspx?author=$1&type=phrase [L,R=301]
+RewriteRule ^cat/su/(.+)$			http://catalog.mylibrary.org/polaris/view.aspx?subject=$1 [L,R=301]
+RewriteRule ^cat/sup/(.+)$			http://catalog.mylibrary.org/polaris/view.aspx?subject=$1&type=phrase [L,R=301]
+RewriteRule ^cat/isbn/(.+)$			http://catalog.mylibrary.org/polaris/view.aspx?isbn=$1 [L,R=301]
+RewriteRule ^cat/se/(.+)$			http://catalog.mylibrary.org/polaris/view.aspx?series=$1 [L,R=301]
+RewriteRule ^cat/ge/(.+)$			http://catalog.mylibrary.org/polaris/search/searchresults.aspx?ctx=1.1033.0.0.6&type=Advanced&relation=ALL&by=GENRE&bool4=AND&limit=TOM=*%20AND%20OWN=1&sort=RELEVANCE&page=0&searchid=1&term=$1 [L,R=301]
+RewriteRule ^cat/(.+)$				http://catalog.mylibrary.org/polaris/view.aspx?keyword=$1 [L,R=301]
+
+</IfModule>
