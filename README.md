@@ -4,7 +4,7 @@
 
 ## How to Use
 
-Add the Apache mod_rewrite rules (apache-mod_rewrite-rules.txt) to your Apache config or to an [.htaccess](http://httpd.apache.org/docs/current/howto/htaccess.html) file. *This is to be added to an Apache-based website (e.g. main library site), NOT the Polaris OPAC server (which uses IIS).*
+Add the Apache mod_rewrite rules (apache-mod_rewrite-rules.txt) to your Apache config or to an [.htaccess](http://httpd.apache.org/docs/current/howto/htaccess.html) file. *This is to be added to an Apache-based website (e.g. main library site), NOT the Polaris OPAC server (which uses IIS web server).*
 
 ## Search URL Patterns
 
