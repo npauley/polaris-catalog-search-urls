@@ -2,6 +2,10 @@
 
 [Polaris](http://www.iii.com/products/polaris) PowerPAC (OPAC) deep links are difficult to remember. The following URL shortcuts allow you to easily make short, easy-to-remember links to catalog searches. They are created through the use of Apache [mod_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html) rules.
 
+## How to Use
+
+Add the Apache mod_rewrite rules (apache-mod_rewrite-rules.txt) to your Apache config or to an [.htaccess](http://httpd.apache.org/docs/current/howto/htaccess.html) file.
+
 ## Search URL Patterns
 
 
