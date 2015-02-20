@@ -4,7 +4,11 @@
 
 ## How to Use
 
+<<<<<<< HEAD
 Add the Apache mod_rewrite rules (apache-mod_rewrite-rules.txt) to your Apache config or to an [.htaccess](http://httpd.apache.org/docs/current/howto/htaccess.html) file. *This is to be added to an Apache-based website (e.g. main library site), NOT the Polaris OPAC server (which uses IIS web server).*
+=======
+Add the Apache mod_rewrite rules (apache-mod_rewrite-rules.txt) to your Apache config or to an [.htaccess](http://httpd.apache.org/docs/current/howto/htaccess.html) file. *This is to be added to an Apache-based website (e.g. main library site), **NOT** the Polaris OPAC server (which uses IIS).*
+>>>>>>> 89d0cd55c07019c24136a1915c0587de9f174a50
 
 ## Search URL Patterns
 
